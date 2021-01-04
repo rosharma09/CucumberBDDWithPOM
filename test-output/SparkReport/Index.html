@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary">Ecom Automation Run Report</span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">Jan 4, 2021 01:03:15 am</span></a>
+<a href="#"><span class="badge badge-primary">Jan 4, 2021 07:00:12 pm</span></a>
 </li>
 </ul>
 </div>
@@ -61,19 +61,19 @@
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>Jan 4, 2021 01:03:15 am</h3>
+<h3>Jan 4, 2021 07:00:12 pm</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>Jan 4, 2021 01:06:35 am</h3>
+<h3>Jan 4, 2021 07:02:48 pm</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-pass">Features Passed</p>
-<h3>2</h3>
+<h3>3</h3>
 </div></div>
 </div>
 <div class="col-md-3">
@@ -96,7 +96,7 @@
 </div>
 <div class="card-footer">
 <div><small data-tooltip='100%'>
-<b>2</b> features passed
+<b>3</b> features passed
 </small>
 </div>
 <div>
@@ -118,7 +118,7 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='100%'><b>13</b> scenarios passed</small></div>
+<div><small data-tooltip='100%'><b>15</b> scenarios passed</small></div>
 <div>
 <small data-tooltip='0%'><b>0</b> scenarios failed,
 <b>0</b> skipped, <b data-tooltip='%'>0</b> others
@@ -138,7 +138,7 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='100%'><b>39</b> steps passed</small></div>
+<div><small data-tooltip='100%'><b>47</b> steps passed</small></div>
 <div>
 <small data-tooltip='0%'><b>0</b> steps failed,
 <b>0</b> skipped, <b data-tooltip='%'>0</b> others
@@ -157,7 +157,7 @@
 </div></div>
 <script>
 var timeline = {
-"Login page features":121.442,"Home page Feature":197.706
+"Search item feature":51.762,"Home page Feature":154.804,"Login page features":91.582
 };
 </script>
 <div class="row">
@@ -192,18 +192,18 @@ var timeline = {
 <script>
 var statusGroup = {
 parentCount: 5,
-passParent: 2,
+passParent: 3,
 failParent: 0,
 warningParent: 0,
 skipParent: 0,
 childCount: 5,
-passChild: 13,
+passChild: 15,
 failChild: 0,
 warningChild: 0,
 skipChild: 0,
 infoChild: 0,
 grandChildCount: 5,
-passGrandChild: 39,
+passGrandChild: 47,
 failGrandChild: 0,
 warningGrandChild: 0,
 skipGrandChild: 0,
@@ -233,9 +233,9 @@ eventsCount: 5,
           tag=""
           device="">
           <div class="test-detail">
-            <p class="name">Login page features</p>
+            <p class="name">Search item feature</p>
             <p class="text-sm">
-              <span>01:03:17 am</span> / <span>00:02:01:442</span>
+              <span>19:00:13 pm</span> / <span>00:00:51:762</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -243,159 +243,99 @@ eventsCount: 5,
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">Login page features</h5>
-<span class='badge badge-success'>01.04.2021 01:03:17</span>
-<span class='badge badge-danger'>01.04.2021 01:05:18</span>
-<span class='badge badge-default'>00:02:01:442</span>
+<h5 class="test-status text-pass">Search item feature</h5>
+<span class='badge badge-success'>01.04.2021 19:00:13</span>
+<span class='badge badge-danger'>01.04.2021 19:01:05</span>
+<span class='badge badge-default'>00:00:51:762</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 </div>
-<div class="m-t-10 m-l-5"> In order to login to the application, the user is provided the login page</div>
+<div class="m-t-10 m-l-5"> In order to search a product on the shopping website,
+the user can use the search bar to search for a particular item</div>
 </div>
 </div>
 <div class="accordion mt-4">
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>To check the page title is displayed correctly</div>
+        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>User searches for the following item using the search field</div>
       </div>
     </div>
-        <div class="collapse">
-          <div class="card-body">
-              <div class="step pass-bg" title="stepdefinations.LoginPageStepDefination.user_is_on_login_page()">
-                <span>Given User is on login page</span>
-      <div>
-      </div>
+        <div class="scenario_outline collapse">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="3"><span class="badge log pass-bg mr-2">Pass</span>User searches for the following item using the search field</div>
+                </div>
               </div>
-              <div class="step pass-bg" title="stepdefinations.LoginPageStepDefination.title_of_the_login_page_is_displayed_as(java.lang.String)">
-                <span>Then Title of the page is displayed as "Login - My Store"</span>
-      <div>
-      </div>
-              </div>
-          </div>
-        </div>
-  </div>
-  <div class="card">
-    <div class="card-header" role="tab">
-      <div class="card-title">
-        <div class="node" id="14"><span class="badge log pass-bg mr-2">Pass</span>In case the user forgets the password, the user can recall the password using the</div>
-      </div>
-    </div>
-        <div class="collapse">
-          <div class="card-body">
-              <div class="step pass-bg" title="stepdefinations.LoginPageStepDefination.user_is_on_login_page()">
-                <span>Given User is on login page</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepdefinations.LoginPageStepDefination.forgot_password_link_is_displayed()">
-                <span>Then Forgot password link is displayed</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepdefinations.LoginPageStepDefination.user_clicks_on_forgot_password_link()">
-                <span>When User clicks on forgot password link</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepdefinations.LoginPageStepDefination.title_of_the_login_page_is_displayed_as(java.lang.String)">
-                <span>Then Title of the page is displayed as "Forgot your password - My Store"</span>
-      <div>
-      </div>
-              </div>
-          </div>
-        </div>
-  </div>
-  <div class="card">
-    <div class="card-header" role="tab">
-      <div class="card-title">
-        <div class="node" id="31"><span class="badge log pass-bg mr-2">Pass</span>To check that the user is able to log into the application using the valid credentials</div>
-      </div>
-    </div>
-        <div class="collapse">
-          <div class="card-body">
-              <div class="step pass-bg" title="stepdefinations.LoginPageStepDefination.user_is_on_login_page()">
-                <span>Given User is on login page</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepdefinations.LoginPageStepDefination.username_and_password_fields_are_displayed()">
-                <span>Then Username and password fields are displayed</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepdefinations.LoginPageStepDefination.user_enter_the_and(java.lang.String,java.lang.String)">
-                <span>When User enter the "TestEcomUser@gmai.com" and "Password001"</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepdefinations.LoginPageStepDefination.click_on_the_login_button()">
-                <span>And Click on the login button</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepdefinations.LoginPageStepDefination.title_of_the_login_page_is_displayed_as(java.lang.String)">
-                <span>Then Title of the page is displayed as "My account - My Store"</span>
-      <div>
-      </div>
-              </div>
-          </div>
-        </div>
-  </div>
-  <div class="card">
-    <div class="card-header" role="tab">
-      <div class="card-title">
-        <div class="node" id="51"><span class="badge log pass-bg mr-2">Pass</span>In order to search an item on ecom application, the search bar should be displayed</div>
-      </div>
-    </div>
-        <div class="collapse">
-          <div class="card-body">
-              <div class="step pass-bg" title="stepdefinations.LoginPageStepDefination.user_is_on_login_page()">
-                <span>Given User is on login page</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepdefinations.LoginPageStepDefination.search_bar_is_displayed()">
-                <span>Then search bar is displayed</span>
-      <div>
-      </div>
-              </div>
-          </div>
-        </div>
-  </div>
-  <div class="card">
-    <div class="card-header" role="tab">
-      <div class="card-title">
-        <div class="node" id="65"><span class="badge log pass-bg mr-2">Pass</span>Under the my account section in the footer, the various option are displayed</div>
-      </div>
-    </div>
-        <div class="collapse">
-          <div class="card-body">
-              <div class="step pass-bg" title="stepdefinations.LoginPageStepDefination.user_is_on_login_page()">
-                <span>Given User is on login page</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepdefinations.LoginPageStepDefination.the_below_metioned_hyperlinks_are_avaiable(io.cucumber.datatable.DataTable)">
-                <span>Then The below metioned hyperlinks are avaiable</span>
-      <div><table class='markup-table table '><tr><td>My orders</td></tr><tr><td>My credit slips</td></tr><tr><td>My addresses</td></tr><tr><td>My personal info</td></tr></table>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given User has already logged into the application</span>
+      <div><table class='markup-table table '><tr><td>Username</td><td>Password</td></tr><tr><td>TestEcomUser@gmai.com</td><td>Password001</td></tr></table>
       </div>
       <div>
       </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Given User is on Home page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When User search for the following "printed Summer Dress"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then User is displayed items as per the "3"</span>
+      <div>
+      </div>
+                  </div>
               </div>
-          </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="35"><span class="badge log pass-bg mr-2">Pass</span>User searches for the following item using the search field</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given User has already logged into the application</span>
+      <div><table class='markup-table table '><tr><td>Username</td><td>Password</td></tr><tr><td>TestEcomUser@gmai.com</td><td>Password001</td></tr></table>
+      </div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Given User is on Home page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When User search for the following "printed chiffon dress"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then User is displayed items as per the "2"</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
         </div>
   </div>
 </div>
           </div>
         </li>
-        <li class="test-item"  status="pass" test-id="3"
+        <li class="test-item"  status="pass" test-id="4"
           author=""
           tag=""
           device="">
           <div class="test-detail">
             <p class="name">Home page Feature</p>
             <p class="text-sm">
-              <span>01:03:17 am</span> / <span>00:03:17:706</span>
+              <span>19:00:13 pm</span> / <span>00:02:34:804</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -404,10 +344,10 @@ eventsCount: 5,
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-pass">Home page Feature</h5>
-<span class='badge badge-success'>01.04.2021 01:03:17</span>
-<span class='badge badge-danger'>01.04.2021 01:06:35</span>
-<span class='badge badge-default'>00:03:17:706</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=3</span>
+<span class='badge badge-success'>01.04.2021 19:00:13</span>
+<span class='badge badge-danger'>01.04.2021 19:02:48</span>
+<span class='badge badge-default'>00:02:34:804</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=4</span>
 </div>
 <div class="m-t-10 m-l-5"> On logging in to the application with valid credentials the user can perform certain sprecific operation like placing order
 searching the application for products, check the orders places and payments, and add to cart feature.</div>
@@ -417,7 +357,7 @@ searching the application for products, check the orders places and payments, an
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="4"><span class="badge log pass-bg mr-2">Pass</span>If a user logs into the application using valid credentials</div>
+        <div class="node" id="5"><span class="badge log pass-bg mr-2">Pass</span>If a user logs into the application using valid credentials</div>
       </div>
     </div>
         <div class="collapse">
@@ -445,7 +385,7 @@ searching the application for products, check the orders places and payments, an
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="21"><span class="badge log pass-bg mr-2">Pass</span>If the user is logged in to the application,</div>
+        <div class="node" id="29"><span class="badge log pass-bg mr-2">Pass</span>If the user is logged in to the application,</div>
       </div>
     </div>
         <div class="collapse">
@@ -475,14 +415,14 @@ searching the application for products, check the orders places and payments, an
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="38"><span class="badge log pass-bg mr-2">Pass</span>The user can click on the various options displayed on the account section</div>
+        <div class="node" id="53"><span class="badge log pass-bg mr-2">Pass</span>The user can click on the various options displayed on the account section</div>
       </div>
     </div>
         <div class="scenario_outline collapse">
             <div class="card-body l1">
               <div class="card-header">
                 <div class="card-title outline-child">
-                  <div class="node" id="39"><span class="badge log pass-bg mr-2">Pass</span>The user can click on the various options displayed on the account section</div>
+                  <div class="node" id="54"><span class="badge log pass-bg mr-2">Pass</span>The user can click on the various options displayed on the account section</div>
                 </div>
               </div>
               <div class="card-body mt-3 collapse">
@@ -508,59 +448,7 @@ searching the application for products, check the orders places and payments, an
             <div class="card-body l1">
               <div class="card-header">
                 <div class="card-title outline-child">
-                  <div class="node" id="57"><span class="badge log pass-bg mr-2">Pass</span>The user can click on the various options displayed on the account section</div>
-                </div>
-              </div>
-              <div class="card-body mt-3 collapse">
-                  <div class="step pass-bg">
-                    <span>Given User has already logged into the application</span>
-      <div><table class='markup-table table '><tr><td>Username</td><td>Password</td></tr><tr><td>TestEcomUser@gmai.com</td><td>Password001</td></tr></table>
-      </div>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>Given User is on Home page</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>When User clicks on the "<Account links>" link</span>
-      <div>
-      </div>
-                  </div>
-              </div>
-            </div>
-            <div class="card-body l1">
-              <div class="card-header">
-                <div class="card-title outline-child">
-                  <div class="node" id="72"><span class="badge log pass-bg mr-2">Pass</span>The user can click on the various options displayed on the account section</div>
-                </div>
-              </div>
-              <div class="card-body mt-3 collapse">
-                  <div class="step pass-bg">
-                    <span>Given User has already logged into the application</span>
-      <div><table class='markup-table table '><tr><td>Username</td><td>Password</td></tr><tr><td>TestEcomUser@gmai.com</td><td>Password001</td></tr></table>
-      </div>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>Given User is on Home page</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>When User clicks on the "<Account links>" link</span>
-      <div>
-      </div>
-                  </div>
-              </div>
-            </div>
-            <div class="card-body l1">
-              <div class="card-header">
-                <div class="card-title outline-child">
-                  <div class="node" id="84"><span class="badge log pass-bg mr-2">Pass</span>The user can click on the various options displayed on the account section</div>
+                  <div class="node" id="77"><span class="badge log pass-bg mr-2">Pass</span>The user can click on the various options displayed on the account section</div>
                 </div>
               </div>
               <div class="card-body mt-3 collapse">
@@ -609,12 +497,64 @@ searching the application for products, check the orders places and payments, an
                   </div>
               </div>
             </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="104"><span class="badge log pass-bg mr-2">Pass</span>The user can click on the various options displayed on the account section</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given User has already logged into the application</span>
+      <div><table class='markup-table table '><tr><td>Username</td><td>Password</td></tr><tr><td>TestEcomUser@gmai.com</td><td>Password001</td></tr></table>
+      </div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Given User is on Home page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When User clicks on the "<Account links>" link</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="112"><span class="badge log pass-bg mr-2">Pass</span>The user can click on the various options displayed on the account section</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given User has already logged into the application</span>
+      <div><table class='markup-table table '><tr><td>Username</td><td>Password</td></tr><tr><td>TestEcomUser@gmai.com</td><td>Password001</td></tr></table>
+      </div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Given User is on Home page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When User clicks on the "<Account links>" link</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
         </div>
   </div>
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="100"><span class="badge log pass-bg mr-2">Pass</span>Once logged into the system, the uesr header info is displayed to the user Ex: Sign out and the user name</div>
+        <div class="node" id="120"><span class="badge log pass-bg mr-2">Pass</span>Once logged into the system, the uesr header info is displayed to the user Ex: Sign out and the user name</div>
       </div>
     </div>
         <div class="collapse">
@@ -633,6 +573,166 @@ searching the application for products, check the orders places and payments, an
               </div>
               <div class="step pass-bg" title="stepdefinations.HomePageStepDefinations.User_info_header_is_displayed()">
                 <span>Then User info header is displayed</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="7"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Login page features</p>
+            <p class="text-sm">
+              <span>19:00:13 pm</span> / <span>00:01:31:582</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Login page features</h5>
+<span class='badge badge-success'>01.04.2021 19:00:13</span>
+<span class='badge badge-danger'>01.04.2021 19:01:45</span>
+<span class='badge badge-default'>00:01:31:582</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=7</span>
+</div>
+<div class="m-t-10 m-l-5"> In order to login to the application, the user is provided the login page</div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="8"><span class="badge log pass-bg mr-2">Pass</span>To check the page title is displayed correctly</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepdefinations.LoginPageStepDefination.user_is_on_login_page()">
+                <span>Given User is on login page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinations.LoginPageStepDefination.title_of_the_login_page_is_displayed_as(java.lang.String)">
+                <span>Then Title of the page is displayed as "Login - My Store"</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="20"><span class="badge log pass-bg mr-2">Pass</span>In case the user forgets the password, the user can recall the password using the</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepdefinations.LoginPageStepDefination.user_is_on_login_page()">
+                <span>Given User is on login page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinations.LoginPageStepDefination.forgot_password_link_is_displayed()">
+                <span>Then Forgot password link is displayed</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinations.LoginPageStepDefination.user_clicks_on_forgot_password_link()">
+                <span>When User clicks on forgot password link</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinations.LoginPageStepDefination.title_of_the_login_page_is_displayed_as(java.lang.String)">
+                <span>Then Title of the page is displayed as "Forgot your password - My Store"</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="46"><span class="badge log pass-bg mr-2">Pass</span>To check that the user is able to log into the application using the valid credentials</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepdefinations.LoginPageStepDefination.user_is_on_login_page()">
+                <span>Given User is on login page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinations.LoginPageStepDefination.username_and_password_fields_are_displayed()">
+                <span>Then Username and password fields are displayed</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinations.LoginPageStepDefination.user_enter_the_and(java.lang.String,java.lang.String)">
+                <span>When User enter the "TestEcomUser@gmai.com" and "Password001"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinations.LoginPageStepDefination.click_on_the_login_button()">
+                <span>And Click on the login button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinations.LoginPageStepDefination.title_of_the_login_page_is_displayed_as(java.lang.String)">
+                <span>Then Title of the page is displayed as "My account - My Store"</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="70"><span class="badge log pass-bg mr-2">Pass</span>In order to search an item on ecom application, the search bar should be displayed</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepdefinations.LoginPageStepDefination.user_is_on_login_page()">
+                <span>Given User is on login page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinations.LoginPageStepDefination.search_bar_is_displayed()">
+                <span>Then search bar is displayed</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="85"><span class="badge log pass-bg mr-2">Pass</span>Under the my account section in the footer, the various option are displayed</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepdefinations.LoginPageStepDefination.user_is_on_login_page()">
+                <span>Given User is on login page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinations.LoginPageStepDefination.the_below_metioned_hyperlinks_are_avaiable(io.cucumber.datatable.DataTable)">
+                <span>Then The below metioned hyperlinks are avaiable</span>
+      <div><table class='markup-table table '><tr><td>My orders</td></tr><tr><td>My credit slips</td></tr><tr><td>My addresses</td></tr><tr><td>My personal info</td></tr></table>
+      </div>
       <div>
       </div>
               </div>

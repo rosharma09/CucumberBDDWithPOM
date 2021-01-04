@@ -1,7 +1,6 @@
 package com.qa.ecommerce.pages;
 
 import java.util.ArrayList;
-import java.util.Iterator;
 import java.util.List;
 
 import org.openqa.selenium.By;
@@ -18,9 +17,23 @@ public class HomePage {
 
 	private By myActLinkList = By.xpath("//div[@class = " + "\"row addresses-lists\"]//li//span");
 	private By userHeaderInfo = By.cssSelector("div .row div.header_user_info a");
+	private By searchInput = By.xpath("//input[@id = \"search_query_top\"]");
+	private By searchButton = By.cssSelector("button[name = \"submit_search\"]");
 
 	public HomePage(WebDriver driverObj) {
 		this.driverObj = driverObj;
+	}
+
+	/**
+	 * This method is used to search for a particular item on the home page
+	 * 
+	 * @param itemToBeSearched
+	 * @return SearchPage -- return the search page object
+	 */
+	public SearchPage searchItem(String itemToBeSearched) {
+		driverObj.findElement(searchInput).sendKeys(itemToBeSearched);
+		driverObj.findElement(searchButton).click();
+		return new SearchPage(driverObj);
 	}
 
 	public String getHomePageTitle() {
@@ -45,23 +58,23 @@ public class HomePage {
 
 		return linkList;
 	}
-	
+
 	public void clickOnLink(String actOptionLink) {
 		List<WebElement> elementsToClick = driverObj.findElements(myActLinkList);
-		for(WebElement e : elementsToClick) {
-			if(e.getText() == actOptionLink) {
+		for (WebElement e : elementsToClick) {
+			if (e.getText() == actOptionLink) {
 				e.click();
 			}
 		}
 	}
-	
+
 	public boolean isUserInfoHeaderDisplayed() {
 		boolean isUserInfoHeaderDIsplayed = false;
 		List<WebElement> userHeaderList = driverObj.findElements(userHeaderInfo);
-		for(WebElement e: userHeaderList) {
+		for (WebElement e : userHeaderList) {
 			isUserInfoHeaderDIsplayed = e.isDisplayed();
 		}
-		
+
 		return isUserInfoHeaderDIsplayed;
 	}
 

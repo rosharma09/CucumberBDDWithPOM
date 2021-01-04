@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
-Test set: Login page features
+Test set: Search item feature
 -------------------------------------------------------------------------------
-Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 91.99 s - in Login page features
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 52.132 s - in Search item feature

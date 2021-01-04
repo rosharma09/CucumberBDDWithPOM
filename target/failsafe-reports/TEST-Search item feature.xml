@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-failsafe-plugin/xsd/failsafe-test-report-3.0.xsd" version="3.0" name="Login page features" time="91.99" tests="5" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-failsafe-plugin/xsd/failsafe-test-report-3.0.xsd" version="3.0" name="Search item feature" time="52.132" tests="2" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="15"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -56,9 +56,6 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="59.0"/>
   </properties>
-  <testcase name="To check the page title is displayed correctly" classname="Login page features" time="20.32"/>
-  <testcase name="In case the user forgets the password, the user can recall the password using the" classname="Login page features" time="19.076"/>
-  <testcase name="To check that the user is able to log into the application using the valid credentials" classname="Login page features" time="20.406"/>
-  <testcase name="In order to search an item on ecom application, the search bar should be displayed" classname="Login page features" time="17.03"/>
-  <testcase name="Under the my account section in the footer, the various option are displayed" classname="Login page features" time="15.158"/>
+  <testcase name="User searches for the following item using the search field #1" classname="Search item feature" time="27.596"/>
+  <testcase name="User searches for the following item using the search field #2" classname="Search item feature" time="24.536"/>
 </testsuite>
