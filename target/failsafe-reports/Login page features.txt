@@ -1,4 +1,7 @@
 -------------------------------------------------------------------------------
 Test set: Login page features
 -------------------------------------------------------------------------------
-Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 91.99 s - in Login page features
+Tests run: 5, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 138.63 s <<< FAILURE! - in Login page features
+To check that the user is able to log into the application using the valid credentials(Login page features)  Time elapsed: 30.922 s  <<< FAILURE!
+java.lang.AssertionError
+

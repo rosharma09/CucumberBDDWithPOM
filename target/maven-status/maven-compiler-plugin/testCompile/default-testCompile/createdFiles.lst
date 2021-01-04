@@ -1,0 +1,5 @@
+stepdefinations\SearchPageStepDefination.class
+stepdefinations\HomePageStepDefinations.class
+AppHooks\AppHooks.class
+com\qa\ecommerce\testrunner\FeatureRunner.class
+stepdefinations\LoginPageStepDefination.class
