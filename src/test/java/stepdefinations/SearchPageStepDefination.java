@@ -27,6 +27,18 @@ public class SearchPageStepDefination {
 	@Then("User is displayed {string} on the UI")
 	public void user_is_displayed_on_the_ui(String expectedMessage) {
 		String actualMessage = searchPageObj.warningMessageDisplayedText();
+		System.out.println("ExpectedWarning Message : " + expectedMessage);
+		System.out.println("ActualWarning Message : " + actualMessage);
 		Assert.assertTrue(actualMessage.equals(expectedMessage));
 	}
+
+	@Then("No results were found for your search {string} message is displayed to the user")
+	public void no_results_were_found_for_your_search_message_is_displayed_to_the_user(String searchKeyword) {
+		String expectedMessage = "No results were found for your search \"" + searchKeyword + "\"";
+		String actualMessage = searchPageObj.warningMessageDisplayedText();
+		System.out.println("ExpectedWarning Message : " + expectedMessage);
+		System.out.println("ActualWarning Message : " + actualMessage);
+		Assert.assertTrue(actualMessage.equals(expectedMessage));
+	}
+
 }
